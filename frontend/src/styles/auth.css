@@ -1,4 +1,4 @@
-/* Auth.css */
+
 .auth-container {
     display: flex;
     justify-content: center;
@@ -8,7 +8,6 @@
 
 .auth-form {
     background: white;
-    padding: 30px;
     border-radius: 8px;
     width: 100%;
     max-width: 400px;
@@ -29,6 +28,14 @@
     color: #666;
 }
 
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 .auth-form input {
     padding: 10px;
     margin-bottom: 16px;
@@ -37,7 +44,33 @@
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
+    font-family: "Mulish", serif;
 }
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input-with-icon input {
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .toggle-icon {
+    right: 10px;
+    left: auto;
+  }
 
 .auth-form button {
     background-color: black;
@@ -47,6 +80,7 @@
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    font-family: "Mulish", serif;
 }
 
 .auth-form button:hover {
@@ -57,9 +91,43 @@
     border-color: #8e8a99;
     outline: none;
 }
-
-.label-input {
+ 
+  .google-signin {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-}
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    gap: 5px;
+  }
+  
+  .google-signin:hover {
+    background: #eaeaea;
+  }
+
+  .google-icon {
+    height: 25px;
+  }
+  
+  .signup-link {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .signup-link a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  

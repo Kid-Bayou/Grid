@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import googleIcon from '../../assets/icons/google.svg'
 
 const Register: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -55,6 +56,16 @@ const Register: React.FC = () => {
         </div>
 
         <button type="submit">Register</button>
+
+
+        <div className="google-signin">
+          <img src={googleIcon} className="google-icon"/>
+          <p>Sign in with Google</p> 
+        </div>
+
+        <div className="signup-link">
+          Already have an account? <a href="/login">Sign In Here</a>
+        </div>
       </form>
     </div>
   );
